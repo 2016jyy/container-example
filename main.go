@@ -16,7 +16,7 @@ func main() {
 	case "child":
 		child()
 	default:
-		panic("what?")
+		print("what?")
 	}
 }
 
@@ -51,4 +51,8 @@ func must(err error) {
 	if err != nil {
 		panic(err)
 	}
+}
+
+func panic(err error) {
+	print(err)
 }
